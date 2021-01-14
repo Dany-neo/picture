@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .looding-img {
+            position: relative;
+            width: 168px;
+            height: 112px;
+            background-image: url(./default.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center center;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .looding-img img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            user-select: none;
+        }
+    </style>
+</head>
+<div class="looding-img"><img src="./looding.gif" alt=""></div>
+
+<body>
+    <!-- 
+    <script>
+        // 假设服务端ip为127.0.0.1
+        let ws = new WebSocket("ws://127.0.0.1:8282");
+        ws.onopen = function () {
+            alert("连接成功");
+            ws.send('tom');
+            alert("给服务端发送一个字符串：tom");
+        };
+        ws.onmessage = function (e) {
+            alert("收到服务端的消息：" + e.data);
+        };
+    </script> -->
+</body>
+
+</html>
